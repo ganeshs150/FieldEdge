@@ -1,0 +1,10 @@
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug\netcoreapp3.1\Data.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug\netcoreapp3.1\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug\netcoreapp3.1\Data.pdb

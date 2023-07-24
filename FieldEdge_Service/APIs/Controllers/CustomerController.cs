@@ -1,6 +1,7 @@
 ﻿using Business.Iterface;
 using Microsoft.AspNetCore.Mvc;
 using Model.DTOs;
+using System;
 using System.Threading.Tasks;
 
 namespace APIs.Controllers
@@ -18,25 +19,53 @@ namespace APIs.Controllers
         [HttpGet]
         public async Task<IActionResult> GetCustomers()
         {
-            return Ok(await _customerMasterManager.GetCustomers());
+            try
+            {
+                return Ok(await _customerMasterManager.GetCustomers());
+            }
+            catch (Exception ex)
+            {
+                return Ok(ex);
+            }
         }
 
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetCustomerById(int id)
         {
-            return Ok(await _customerMasterManager.GetCustomerById(id));
+            try
+            {
+                return Ok(await _customerMasterManager.GetCustomerById(id));
+            }
+            catch (Exception ex)
+            {
+                return Ok(ex);
+            }
         }
 
         [HttpPost]
         public async Task<IActionResult> Upsert(CustomerRequest customerRequest)
         {
-            return new JsonResult(await _customerMasterManager.Upsert(customerRequest));
+            try
+            {
+                return new JsonResult(await _customerMasterManager.Upsert(customerRequest));
+            }
+            catch (Exception ex)
+            {
+                return Ok(ex);
+            }
         }
 
         [HttpDelete("{id:int}")]
         public IActionResult Delete(int id)
         {
-            return new JsonResult(_customerMasterManager.DeleteCustomer(id));
+            try
+            {
+                return new JsonResult(_customerMasterManager.DeleteCustomer(id));
+            }
+            catch (Exception ex)
+            {
+                return Ok(ex);
+            }
         }
     }
 }

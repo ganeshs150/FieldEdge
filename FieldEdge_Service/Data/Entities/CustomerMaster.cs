@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace Data.Entities
 {
@@ -19,6 +17,7 @@ namespace Data.Entities
         public string lastname_ascii { get; set; }
         public string lastname_country_rank { get; set; }
         public string lastname_country_frequency { get; set; }
+        [Required]
         public string email { get; set; }
         public string password { get; set; }
         public string country_code { get; set; }
@@ -26,8 +25,8 @@ namespace Data.Entities
         public string country_name { get; set; }
         public string primary_language_code { get; set; }
         public string primary_language { get; set; }
-        public double balance { get; set; }
-        public string phone_Number { get; set; }
-        public string currency { get; set; }
+        public double balance { get; set; } = 0;
+        public string phone_number { get; set; }
+        public string currency { get; set; } 
     }
 }

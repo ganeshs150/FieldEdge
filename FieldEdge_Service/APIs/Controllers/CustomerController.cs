@@ -1,10 +1,6 @@
 ﻿using Business.Iterface;
-using Business.Manager;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Model.DTOs;
 using System.Threading.Tasks;
 
 namespace APIs.Controllers
@@ -23,6 +19,24 @@ namespace APIs.Controllers
         public async Task<IActionResult> GetCustomers()
         {
             return Ok(await _customerMasterManager.GetCustomers());
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetCustomerById(int id)
+        {
+            return Ok(await _customerMasterManager.GetCustomerById(id));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Upsert(CustomerRequest customerRequest)
+        {
+            return new JsonResult(await _customerMasterManager.Upsert(customerRequest));
+        }
+
+        [HttpDelete("{id:int}")]
+        public IActionResult Delete(int id)
+        {
+            return new JsonResult(_customerMasterManager.DeleteCustomer(id));
         }
     }
 }

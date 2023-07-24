@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YitT1LMgnEjuWd75QMgIIQAUZlAAauZDAupe/4Y4KwOrEP+qAYTNOZpsj4ZpKlwz3l/XVSZJUpuE5RIOjtoyHQ==",
+  "dgSpecHash": "RCWOCayWsuEBCKhw7WdojLEdZrcYAwjHKXTJC3CctRu1HHfzHbaoL7qYQqOzEaaom43mpcOM+dQYzZ3CVXb44A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Documents\\Projects\\FieldEdgeCore\\FieldEdge_Service\\Business\\Business.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\automapper\\7.0.1\\automapper.7.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\5.0.1\\automapper.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.32\\microsoft.aspnetcore.jsonpatch.3.1.32.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.32\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.32.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
@@ -103,6 +105,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",

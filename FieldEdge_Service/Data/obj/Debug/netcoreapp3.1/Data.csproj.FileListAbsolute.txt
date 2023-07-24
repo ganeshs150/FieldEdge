@@ -8,3 +8,6 @@ C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug
 C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug\netcoreapp3.1\Data.dll
 C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug\netcoreapp3.1\Data.pdb
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete

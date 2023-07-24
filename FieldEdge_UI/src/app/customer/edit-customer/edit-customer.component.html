@@ -1,0 +1,89 @@
+<div class="container-fluid">
+    <h5>
+        {{customerId==0 ? 'New' : 'Edit'}} Customer
+    </h5>
+
+    <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+
+        <div class="row padding-control">
+            <div class="col-md-2">
+                <label for="firstname" class="form-label">First Name</label>
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="firstname" name="firstname" class="form-control form-control-sm"
+                    formControlName="firstname" placeholder="First Name">
+            </div>
+        </div>
+
+        <div class="row padding-control">
+            <div class="col-md-2">
+                <label for="lastname" class="form-label">Last Name</label>
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="lastname" name="lastname" class="form-control form-control-sm"
+                    formControlName="lastname" placeholder="Last Name">
+            </div>
+        </div>
+
+        <div class="row padding-control">
+            <div class="col-md-2">
+                <label for="email" class="form-label">Email</label>
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="email" name="email" class="form-control form-control-sm" formControlName="email"
+                    placeholder="Email">
+
+                <div *ngIf="f.email.touched && f.email.invalid" class="form-control form-control-sm error-block">
+                    <div *ngIf="formSubmitted || f.email.errors.required">Email is required.</div>
+                    <div *ngIf="(formSubmitted || f.email.errors.email) && !f.email.errors.required">Please, enter valid
+                        email address.</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row padding-control">
+            <div class="col-md-2">
+                <label for="country_code" class="form-label">Country Code</label>
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="country_code" name="country_code" class="form-control form-control-sm"
+                    formControlName="country_code" placeholder="Country Code">
+            </div>
+        </div>
+
+        <div class="row padding-control">
+            <div class="col-md-2">
+                <label for="phone_number" class="form-label">Phone Number</label>
+            </div>
+            <div class="col-md-3">
+                <input type="text" id="phone_number" name="phone_number" class="form-control form-control-sm"
+                    formControlName="phone_number" placeholder="Phone Number">
+            </div>
+        </div>
+
+        <div class="row padding-control">
+            <div class="col-md-2">
+                <label for="gender" class="form-label">Gender</label>
+            </div>
+            <div class="col-md-3">
+                <input type="radio" value="male" id="gender" name="gender" formControlName="gender"> Male
+                <input type="radio" value="female" id="gender" name="gender" formControlName="gender"> Female
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col">
+            </div>
+        </div>
+        <div class="row padding-control">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-primary" type="submit" [disabled]="!customerForm.valid">Submit</button>&nbsp;
+                <button class="btn btn-primary" type="button" routerLink="/customer">Cancel</button>
+            </div>
+        </div>
+
+    </form>
+</div>

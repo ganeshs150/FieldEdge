@@ -1,48 +1,46 @@
+<div class="container-fluid py-3">
+  <h5>Customers
+  </h5>
+  <p-table dataKey="id" [value]="customers" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[10, 25, 50]">
+    <ng-template pTemplate="header">
+      <tr>
+        <th style="width: 10%">CustomerId</th>
+        <th style="width:15%">FirstName</th>
+        <th style="width:15%">LastName</th>
+        <th style="width:15%">Email</th>
+        <th style="width:15%">Phone_Number</th>
+        <th style="width:15%">Country_Code</th>
+        <th style="width:10%">Gender</th>
+        <th style="width:10%">Balance</th>
+        <th style="width:5%">Edit</th>
+        <th style="width:5%">Delete</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-customers>
+      <tr [pSelectableRow]="customers">
+        <td>{{ customers.id }}</td>
+        <td>{{ customers.firstname }}</td>
+        <td>{{ customers.lastname }}</td>
+        <td><a href="mailto:email@example.com">{{customers.email}}</a></td>
+        <td>{{ customers.phone_number }}</td>
+        <td>{{ customers.country_code }}</td>
+        <td>{{ customers.gender }}</td>
+        <td>{{ customers.balance| currency }}</td>
+        <td><i class="bi bi-pencil" routerLink="/customer/edit/{{customers.id}}"></i></td>
+        <td><i class="bi bi-x-lg" (click)="deleteCustomer(customers.id);"></i></td>
+      </tr>
+    </ng-template>
+
+  </p-table>
+
+</div>
 
 <div class="container-fluid py-3">
-    <div class="row my-3">
-      <div class="col">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-    </div>
-    <div class="row my-3">
-      <div class="col">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-    </div>
-    <div class="row my-3">
-      <div class="col">
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-        </div>
-      </div>
-    </div>
-    <div class="row my-3">
-      <div class="col">
-      </div>
+  <div class="row my-3">
+    <div class="col" style="text-align: right;">
+      <button type="button" routerLink="/customer/edit/0" class="btn btn-outline-success">New Customer</button>
     </div>
   </div>
-  
-  <ng-template #demoModal let-modal>
-    <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
-    </div>
-    <div class="modal-body">
-      <form>
-        <div class="form-group">
-          <label for="dateOfBirth">Date of birth</label>
-          <div class="input-group">
-            <input id="dateOfBirth" name="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" ngbDatepicker #dp="ngbDatepicker">
-            <button type="button" class="btn btn-outline-secondary bi bi-calendar" (click)="dp.toggle()"></button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
-    </div>
-  </ng-template>
+</div>

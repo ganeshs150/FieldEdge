@@ -11,3 +11,5 @@ C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Business\obj\D
 C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
 C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Business\obj\Debug\netcoreapp3.1\Business.dll
 C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Business\obj\Debug\netcoreapp3.1\Business.pdb
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Business\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\Admin\Documents\Projects\FieldEdgeCore\FieldEdge_Service\Business\bin\Debug\netcoreapp3.1\Model.pdb

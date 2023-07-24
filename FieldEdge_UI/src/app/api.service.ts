@@ -16,4 +16,24 @@ export class ApiService {
     return this.httpClient.get(url);
   }
 
+  public getCustomerById(customerId: number) {
+    let url = this.baseUrl + "Customer/" + customerId;
+    return this.httpClient.get(url);
+  }
+
+  public upsertCustomer(customer: any) {
+    let headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+    });
+    let options = { headers: headers };
+
+    let url = this.baseUrl + "Customer";
+    return this.httpClient.post<any>(url, customer, options);
+  }
+
+  public deleteCustomerById(customerId: number) {
+    let url = this.baseUrl + "Customer/" + customerId;
+    return this.httpClient.delete(url);
+  }
+
 }

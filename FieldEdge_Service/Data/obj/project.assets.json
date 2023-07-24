@@ -1471,6 +1471,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
       }
     }
   },
@@ -5518,6 +5528,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5525,6 +5540,7 @@
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.32",
       "Microsoft.EntityFrameworkCore >= 3.1.32",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.32",
+      "Model >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.0.0"
     ]
   },
@@ -5554,7 +5570,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Admin\\Documents\\Projects\\FieldEdgeCore\\FieldEdge_Service\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Documents\\Projects\\FieldEdgeCore\\FieldEdge_Service\\Model\\Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
 
 @Component({
@@ -9,15 +8,29 @@ import { ApiService } from 'src/app/api.service';
   styleUrls: ['./view-customers.component.css']
 })
 export class ViewCustomersComponent {
-  customers:any = [];
-  constructor(private apiService: ApiService) { }
+  customers: any = [];
+  constructor(private apiService: ApiService, private router: Router) { }
 
   ngOnInit() {
+   this.getCustomers();
+  }
 
-    this.apiService.getCustomers().subscribe((data)=>{
-      console.log(data);
-      this.customers = data;
-    })  
+  public getCustomers(){
+    this.apiService.getCustomers().subscribe((data) => {
+      if (data) {
+        this.customers = data;
+      }
+    });
+  }
+
+  public deleteCustomer(id: number) {
+    if(confirm("Are you sure to delete")) {
+      this.apiService.deleteCustomerById(id).subscribe((data) => {
+        if (data) {
+          this.getCustomers();
+        }
+      });
+    }
   }
 
 }
